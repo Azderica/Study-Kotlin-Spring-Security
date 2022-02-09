@@ -3,7 +3,8 @@ data class Text(
 )
 
 fun main(args: Array<String>) {
-    var message = Text()
+    var message: Text? = null
 
-    println(message.text)
+    // null 이면 null 이 출력되는 코드 - null safe
+    println(message?.text)
 }
