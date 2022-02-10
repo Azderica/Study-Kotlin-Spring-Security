@@ -3,7 +3,14 @@ data class Text(
 )
 
 fun main(args: Array<String>) {
-    var message: Text? = Text("Hello Hello")
+    val message: Text? = Text()
+
+    var m = when(message) {
+        null -> 5
+        else -> 0
+    }
+
+    println(m)
 
     message?.let {
         println("Message: ${it.text}")

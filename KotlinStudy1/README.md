@@ -9,6 +9,9 @@ Kotlin의 장점 중 가장 큰 점은 효율성의 증가
 
 - NullSafe, ?, ?.let{}
 - Type 지정방식
+  - `var 변수명: 형식 = 해당 값`
 - var, val
+  - var : 변경될 수 있는 값
+  - val : 변경될 수 없는 값 (스프링부터에서 대부분 이거를 씀)
 - when, if
 - data class
