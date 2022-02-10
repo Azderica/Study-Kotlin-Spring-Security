@@ -3,8 +3,9 @@ data class Text(
 )
 
 fun main(args: Array<String>) {
-    var message: Text? = null
+    var message: Text? = Text("Hello Hello")
 
-    // null 이면 null 이 출력되는 코드 - null safe
-    println(message?.text)
+    message?.let {
+        println("Message: ${it.text}")
+    }
 }
